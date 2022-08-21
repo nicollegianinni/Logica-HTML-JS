@@ -1,0 +1,17 @@
+
+
+<meta charset="UTF-8">  
+
+<h1> advinhe meu numero...</h1>
+
+
+<script>
+
+function pulaLinha() {
+	document.write ("<br><br>");
+}
+
+function mostrar(frase) {
+	document.write (frase);
+    pulaLinha();
+}

@@ -1,0 +1,26 @@
+<meta charset="UTF-8">  
+
+<h1> Esses são todos os anos das copas de futbol:</h1>
+
+
+<script>
+
+function pulaLinha() {
+	document.write ("<br><br>");
+}
+
+function mostrar(frase) {
+	document.write (frase);
+    pulaLinha();
+}
+var limite = parseInt( prompt ("entre com data limite"));
+var anoCopa = 1930;
+
+while (anoCopa <= limite){
+mostrar ("teve copa no ano "+ anoCopa);
+
+anoCopa = anoCopa +4;
+}
+mostrar ("fim");
+
+</script>

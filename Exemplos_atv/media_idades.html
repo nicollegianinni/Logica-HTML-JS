@@ -1,0 +1,32 @@
+<meta charset="UTF-8">
+<h1>media das idades é </h1>
+
+<script>
+    
+function pulaLinha() {
+    document.write ("<br><br>");
+}
+
+function mostrar(frase) {
+    document.write (frase);
+    pulaLinha();
+}
+
+
+
+var totalFamiliares = parseInt( prompt ("quantas pessoas?"));
+var numero = 1;
+var somaIDades = 0; // criou se uma variavel para guardar as idades
+
+while (numero<=totalFamiliares){
+    var idade= parseInt( prompt ("digite a idade:"));
+    somaIDades= somaIDades + idade; // indicou onde guardara a idade e a proxima idade...
+    numero++;
+}
+
+
+var mediaIDades =  somaIDades / totalFamiliares;
+mostrar ("a media das idades é " + mediaIDades);
+
+
+</script>

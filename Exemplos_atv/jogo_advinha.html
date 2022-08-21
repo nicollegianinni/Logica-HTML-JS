@@ -1,0 +1,43 @@
+<meta charset="UTF-8">  
+
+<h1> advinhe meu numero...</h1>
+
+
+<script>
+
+function pulaLinha() {
+	document.write ("<br><br>");
+}
+
+function mostrar(frase) {
+	document.write (frase);
+    pulaLinha();
+}
+
+
+
+var NumPensado = Math.round(Math.random()*10);
+console.log(NumPensado); // para vc ver o numero no console antes de vc digitar...
+
+var tentativas = 1;
+
+while (tentativas <=3) {
+
+	var chute = parseInt(prompt("chute um  numero!"));
+
+	  if (chute == NumPensado){
+		mostrar("você acertou! o numero pensado foi " + NumPensado);
+
+		break;
+
+	   }
+    else {
+		  mostrar(" você errou! usou " + tentativas + " tentativa(s)!" );
+    }
+
+ tentativas ++;
+}
+
+
+mostrar ("finalizado!");
+</script>

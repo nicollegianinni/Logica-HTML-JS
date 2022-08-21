@@ -1,0 +1,38 @@
+<meta charset="UTF-8">  
+
+<h1> Descubra quantos pontos seu time tem!</h1>
+
+
+<script>
+
+function pulaLinha() {
+	document.write ("<br><br>");
+}
+
+function mostrar(frase) {
+	document.write (frase);
+    pulaLinha();
+}
+
+var vitorias = parseInt(prompt ("entre com o numero de vitorias:"));
+var empates = parseInt(prompt (" entre com numero de empates:"));
+
+
+var pontos = (vitorias * 3) + empates;
+
+
+mostrar(" <hr>os pontos do seu time é <br><br>"+ pontos);
+
+
+if (pontos > 28){
+mostrar ("seu time esta melhor que o ano passado!"+ pontos)
+}
+if (pontos == 28){
+mostrar ("seu time esta igual ao ano passado!")
+}
+if (pontos < 28){
+mostrar ("seu time esta pior que o ano passado!")
+}
+mostrar ("finalizado!")
+</script>
+
